@@ -4,10 +4,14 @@ import PropTypes from 'prop-types'
 
 const styles = {
     timeline: {
-        flex: '1 0 auto'
+        flex: '1 0 auto',
+        marginTop: '60px',
+        padding: '0 5px'
     },
     timelineWrapper: {
         display: 'flex',
+        alignItems: 'center',
+        padding: '0 5px'
     }
 };
 

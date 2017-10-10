@@ -20,7 +20,7 @@ class DatePicker extends React.Component {
     }
 
     render () {
-        return <input style={{width: '100%'}} ref={(input) => {
+        return <input className='enebular-input' style={{width: '100%'}} ref={(input) => {
             this.datePicker = input
         }} type='date' />
     }
