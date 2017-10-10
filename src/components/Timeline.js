@@ -1,5 +1,6 @@
 import React from 'react';
 import {infomotionUI} from 'enebular-infomotion';
+import PropTypes from 'prop-types'
 
 const styles = {
     timeline: {
@@ -43,7 +44,7 @@ class Timeline extends React.Component {
 }
 
 Timeline.propTypes = {
-    onDatePicker: PropTypes.func.isRequired,
+    onReady: PropTypes.func.isRequired,
     dateRange: PropTypes.array.isRequired
 };
 
