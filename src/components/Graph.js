@@ -10,6 +10,7 @@ class Graph extends React.Component {
 
     componentDidMount() {
         let graph = infomotionUI.graph(this.graphElement, this.props.graphSetting);
+        graph.useTopic(this.props.graphSetting.topic);
         graph.render();
 
         this.props.onReady(graph)
