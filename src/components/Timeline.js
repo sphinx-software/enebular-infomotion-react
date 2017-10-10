@@ -6,7 +6,7 @@ const styles = {
     timeline: {
         flex: '1 0 auto',
         marginTop: '60px',
-        padding: '0 5px'
+        padding: '0 25px'
     },
     timelineWrapper: {
         display: 'flex',
