@@ -28,7 +28,7 @@ Graph.propTypes = {
 };
 
 Graph.defaultProps = {
-    onReady: {},
+    onReady: () => {},
     graphSetting: {},
 };
 
