@@ -28,11 +28,13 @@ class DatePicker extends React.Component {
 
 DatePicker.propTypes = {
     onReady: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired,
     dateRange: PropTypes.array.isRequired
 };
 
 DatePicker.defaultProps = {
     onReady: () => {},
+    onChange: () => {},
     dateRange: [new Date('2016-12-30'), new Date()]
 };
 
