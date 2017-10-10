@@ -27,7 +27,7 @@ class DatePicker extends React.Component {
 }
 
 DatePicker.propTypes = {
-    onDatePicker: PropTypes.func.isRequired,
+    onReady: PropTypes.func.isRequired,
     dateRange: PropTypes.array.isRequired
 };
 
