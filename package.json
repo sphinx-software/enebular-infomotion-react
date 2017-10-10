@@ -26,5 +26,6 @@
     "enebular-infomotion": "git+ssh://git@github.com/sphinx-software/enebular-infomotion.git#develop",
     "prop-types": "^15.6.0",
     "react": "^16.0.0"
-  }
+  },
+  "postinstall": "npm run build"
 }

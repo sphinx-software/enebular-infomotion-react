@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import {} from '../../lib'
+import {Timeline} from 'enebular-infomotion-react';
 import './App.css';
 
 class App extends Component {
