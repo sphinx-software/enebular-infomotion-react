@@ -1,6 +1,7 @@
-import React from 'react'
-import LiveButton from './LiveButton'
-import Timeline from './Timeline'
+import React from 'react';
+import LiveButton from './LiveButton';
+import Timeline from './Timeline';
+import PropTypes from 'prop-types';
 
 class ControlWrapper extends React.Component {
     constructor(props) {
