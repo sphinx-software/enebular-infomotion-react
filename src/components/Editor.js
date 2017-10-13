@@ -18,6 +18,7 @@ class Editor extends React.Component {
                 .withDatasources(this.props.datasources)
                 .withPluginManager(this.props.pluginManager)
                 .withSettings(this.props.graphEditor)
+                .hasCancelButton(this.props.hasCancelBtn)
                 .make();
 
             graphEditor.open();
@@ -69,6 +70,7 @@ Editor.propTypes = {
 
 Editor.defaultProps = {
     className: '',
+    hasCancelBtn: false,
     datasources: [],
     graphEditor: {},
     onChange: () => {
