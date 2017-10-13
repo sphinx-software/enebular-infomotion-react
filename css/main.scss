@@ -64,6 +64,10 @@
     .enebular-filter-graph-wrapper {
         height: calc(100% - 30px);
     }
+    .enebular-filter-list {
+        overflow: auto;
+        height: 485px;
+    }
 
      .enebular-filters {
         height: 100%;

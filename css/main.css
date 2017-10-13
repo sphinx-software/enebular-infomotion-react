@@ -45,7 +45,10 @@
   position: absolute;
   border-radius: 3px; }
   .enebular-component-react-modal-filter .enebular-filter-graph-wrapper {
-    height: calc(100% - 60px); }
+    height: calc(100% - 30px); }
+  .enebular-component-react-modal-filter .enebular-filter-list {
+    overflow: auto;
+    height: 485px; }
   .enebular-component-react-modal-filter .enebular-filters {
     height: 100%;
     position: relative; }
