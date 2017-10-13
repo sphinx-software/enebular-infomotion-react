@@ -20,6 +20,8 @@ class Filter extends React.Component {
 
             filterUI.open();
 
+            this.props.onReady(filterUI);
+
             filterUI.onChange((filter) => {
                 this.props.onChange(filter.toJson());
                 this.closeFilterModal();
@@ -64,6 +66,7 @@ Filter.propTypes = {
     pluginManager: PropTypes.any.isRequired,
     filterUI: PropTypes.object.isRequired,
     className: PropTypes.string,
+    onReady: PropTypes.func,
     onChange: PropTypes.func,
     onCancel: PropTypes.func
 };
@@ -74,6 +77,8 @@ Filter.defaultProps = {
     filterUI: {
         options: [],
         filter: []
+    },
+    onReady: () => {
     },
     onChange: () => {
     },
