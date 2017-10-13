@@ -1,0 +1,79 @@
+.info-react-control-wrapper {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    .control-live {
+        width: 60px;
+    }
+
+    .control-timeline {
+        flex: 1;
+    }
+
+    .btn-filter {
+
+    }
+
+    .btn-editor {
+
+    }
+
+    .modal {
+        background-color: #fff;
+        z-index:1001;
+        outline: none;
+        width: 500px;
+        margin: 0 auto;
+        top: calc(50% - 300px);
+        height: 600px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        border-radius: 3px;
+    }
+
+    .modal-filter {
+        background-color: #fff;
+        z-index:1001;
+        outline: none;
+        width: 500px;
+        margin: 0 auto;
+        top: calc(50% - 300px);
+        height: 700px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        border-radius: 3px;
+    }
+
+    .dash-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .7);
+        z-index:1000;
+    }
+
+    .modal-filter .enebular-filter-graph-wrapper {
+        height: calc(100% - 60px);
+    }
+
+    .modal-filter .enebular-filters {
+        height: 100%;
+        position: relative;
+    }
+
+    .modal-filter .ui-filter-btn-group {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .modal-content {
+        padding: 20px;
+        height: 100%;
+    }
+}
+

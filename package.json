@@ -27,6 +27,7 @@
   "dependencies": {
     "enebular-infomotion": "git+ssh://git@bitbucket.org/technicalrockstars/infomotion-v2.git#develop",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "react-modal": "^3.0.0"
   }
 }
