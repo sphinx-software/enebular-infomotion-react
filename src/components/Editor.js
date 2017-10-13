@@ -64,6 +64,7 @@ Editor.propTypes = {
     pluginManager: PropTypes.any.isRequired,
     graphEditor: PropTypes.object.isRequired,
     className: PropTypes.string,
+    hasCancelBtn: PropTypes.bool,
     onChange: PropTypes.func,
     onCancel: PropTypes.func
 };

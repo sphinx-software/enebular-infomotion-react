@@ -32,6 +32,9 @@
   background: rgba(0, 0, 0, 0.7);
   z-index: 1000; }
 
+.enebular-editor-form-control {
+  text-align: center; }
+
 .enebular-component-react-modal-filter {
   background-color: #fff;
   z-index: 1001;
