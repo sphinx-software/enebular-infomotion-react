@@ -29,6 +29,8 @@ class Editor extends React.Component {
                 graphEditor.useAddMode();
             }
 
+            console.log(graphEditor);
+
             graphEditor.make();
 
             this.props.onReady(graphEditor);
