@@ -46,10 +46,14 @@ class Editor extends React.Component {
     }
 
     render() {
+        if (this.props.autoOpen) {
+            this.onEditorClick();
+        }
         return <div style={{display: 'inline-block'}} className="info-react-control-wrapper">
-            <button className={`btn-editor ${this.props.className}`} onClick={this.onEditorClick.bind(this)}>
-                {this.props.children}
-            </button>
+            {this.props.autoOpen ? '' :
+                <button className={`btn-editor ${this.props.className}`} onClick={this.onEditorClick.bind(this)}>
+                    {this.props.children}
+                </button>}
             <Modal isOpen={this.state.modalEditor}
                    className='enebular-component-react-modal'
                    overlayClassName='enebular-component-react-overlay'
@@ -72,6 +76,7 @@ Editor.propTypes = {
     className: PropTypes.string,
     hasCancelBtn: PropTypes.bool,
     useAddMode: PropTypes.bool,
+    autoOpen: PropTypes.bool,
     onReady: PropTypes.func,
     onChange: PropTypes.func,
     onCancel: PropTypes.func
@@ -81,6 +86,7 @@ Editor.defaultProps = {
     className: '',
     hasCancelBtn: false,
     useAddMode: false,
+    autoOpen: false,
     datasources: [],
     graphEditor: {},
     onReady: () => {
