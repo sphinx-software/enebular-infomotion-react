@@ -34,6 +34,16 @@ class Tool extends Component {
         this.setDate({dateRange: [dateRange.getStartDate(), dateRange.getEndDate()]})
     }
 
+    onGraphReady(graph) {
+        let graphSetting = this.state.graphSetting;
+
+        graphSetting.instance = graph;
+
+        this.setState({graphSetting: graphSetting});
+
+        this.graphContext.useGraphs(graph);
+    }
+
     onFilterChange(dataFilter) {
 
     }
@@ -58,18 +68,21 @@ class Tool extends Component {
                             dateRange={this.state.dateRange}/>
                 <Filter datasources={this.props.datasources}
                         pluginManager={this.props.pluginManager}
-                        graphEditor={this.state.graphSetting.graphEditor}
+                        filterUI={this.state.graphSetting.filterUI}
                         onChange={this.onFilterChange.bind(this)}
                         onCancel={this.onFilterCancel.bind(this)}>
                     Filter Graph
                 </Filter>
                 <Editor datasources={this.props.datasources}
                         pluginManager={this.props.pluginManager}
-                        filterUI={this.state.graphSetting.filterUI}
+                        graphEditor={this.state.graphSetting.graphEditor}
                         onChange={this.onEditorChange.bind(this)}
                         onCancel={this.onEditorCancel.bind(this)}>
                     Graph Editor
                 </Editor>
+                <div style={{height: '400px'}}>
+                    <Graph onReady={this.onGraphReady.bind(this)} graphSetting={this.state.graphSetting}/>
+                </div>
                 <ControlWrapper dateRange={this.state.dateRange}
                                 onReady={this.onControlReady.bind(this)}
                 />

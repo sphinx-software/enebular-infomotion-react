@@ -48,7 +48,7 @@ class Filter extends React.Component {
                    overlayClassName="enebular-component-react-overlay"
                    onRequestClose={this.closeFilterModal.bind(this)} contentLabel='Modal'>
                 <div className='modal-content'>
-                    <h3>Filter Graph</h3>
+                    <h3 style={{margin: '3px 0'}}>Filter Graph</h3>
                     <div ref={(element) => {
                         this.formFilterElement = element
                     }}/>
