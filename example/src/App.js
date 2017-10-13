@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Timeline, Datepicker, LiveButton} from 'enebular-infomotion-react';
-import 'enebular-infomotion/dist/css/app.css'
+import {Datepicker, } from 'enebular-infomotion-react';
+import 'enebular-infomotion/dist/css/app.css';
+import 'enebular-infomotion-react/css/main.css';
 
 import './App.css';
 
@@ -32,8 +33,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Timeline onReady={this.onTimelineReady.bind(this)} dateRange={this.state.dateRange}/>
-                <LiveButton onReady={this.onLiveReady.bind(this)}/>
                 <Datepicker onReady={this.onDatepickerReady.bind(this)} onChange={this.onDatepickerChange.bind(this)} dateRange={this.state.dateRange}/>
             </div>
         );
