@@ -48,7 +48,7 @@
     height: calc(100% - 30px); }
   .enebular-component-react-modal-filter .enebular-filter-list {
     overflow: auto;
-    height: 485px; }
+    max-height: 485px; }
   .enebular-component-react-modal-filter .enebular-filters {
     height: 100%;
     position: relative; }
