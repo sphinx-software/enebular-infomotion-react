@@ -11,6 +11,12 @@ class Editor extends React.Component {
         }
     }
 
+    componentDidMount() {
+        if(this.props.autoOpen) {
+            this.onEditorClick();
+        }
+    }
+
     onEditorClick() {
 
         this.setState({modalEditor: true}, () => {
@@ -46,9 +52,6 @@ class Editor extends React.Component {
     }
 
     render() {
-        if (this.props.autoOpen) {
-            this.onEditorClick();
-        }
         return <div style={{display: 'inline-block'}} className="info-react-control-wrapper">
             {this.props.autoOpen ? '' :
                 <button className={`btn-editor ${this.props.className}`} onClick={this.onEditorClick.bind(this)}>
