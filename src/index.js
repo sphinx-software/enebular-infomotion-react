@@ -6,4 +6,4 @@ import ControlWrapper from './components/ControlWrapper';
 import Filter from './components/Filter';
 import Editor from './components/Editor';
 
-export {Timeline, Datepicker, LiveButton, Graph, Filter};
+export {Timeline, Datepicker, LiveButton, Graph, ControlWrapper, Filter, Editor};
