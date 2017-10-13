@@ -12,7 +12,7 @@ class Editor extends React.Component {
     }
 
     componentDidMount() {
-        if(this.props.autoOpen) {
+        if (this.props.autoOpen) {
             this.onEditorClick();
         }
     }
@@ -48,7 +48,10 @@ class Editor extends React.Component {
     }
 
     closeEditorModal() {
-        this.setState({modalEditor: false})
+        if (this.props.autoOpen) {
+            return;
+        }
+        this.setState({modalEditor: false});
     }
 
     render() {
