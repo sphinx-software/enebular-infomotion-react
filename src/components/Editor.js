@@ -35,12 +35,12 @@ class Editor extends React.Component {
 
             graphEditor.onChange((config) => {
                 this.props.onChange(config);
-                this.closeEditorModal();
+                this.setState({modalEditor: false});
             });
 
             graphEditor.onCancel(() => {
                 this.props.onCancel();
-                this.closeEditorModal();
+                this.setState({modalEditor: false});
             });
 
             this.props.onReady(graphEditor);
