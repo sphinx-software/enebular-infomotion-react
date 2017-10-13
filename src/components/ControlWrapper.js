@@ -35,7 +35,7 @@ class ControlWrapper extends React.Component {
 
 ControlWrapper.propTypes = {
     onReady: PropTypes.func.isRequired,
-    graphSetting: PropTypes.array.isRequired
+    dateRange: PropTypes.array.isRequired
 };
 
 ControlWrapper.defaultProps = {

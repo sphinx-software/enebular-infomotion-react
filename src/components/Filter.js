@@ -70,6 +70,11 @@ Filter.propTypes = {
 
 Filter.defaultProps = {
     className: '',
+    datasources: [],
+    filterUI: {
+        options: [],
+        filter: []
+    },
     onChange: () => {
     },
     onCancel: () => {

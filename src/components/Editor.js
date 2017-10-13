@@ -69,6 +69,8 @@ Editor.propTypes = {
 
 Editor.defaultProps = {
     className: '',
+    datasources: [],
+    graphEditor: {},
     onChange: () => {
     },
     onCancel: () => {

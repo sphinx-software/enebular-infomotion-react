@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Datepicker, ControlWrapper, Filter, Editor, Graph} from 'enebular-infomotion-react';
+import PropTypes from 'prop-types';
 import {infomotion} from 'enebular-infomotion';
 import 'enebular-infomotion/dist/css/app.css';
 import 'enebular-infomotion-react/css/main.css';
@@ -58,15 +59,15 @@ class Tool extends Component {
                 <Filter datasources={this.props.datasources}
                         pluginManager={this.props.pluginManager}
                         graphEditor={this.state.graphSetting.graphEditor}
-                        onChange={this.props.onFilterChange.bind(this)}
-                        onCancel={this.props.onFilterCancel.bind(this)}>
+                        onChange={this.onFilterChange.bind(this)}
+                        onCancel={this.onFilterCancel.bind(this)}>
                     Filter Graph
                 </Filter>
                 <Editor datasources={this.props.datasources}
                         pluginManager={this.props.pluginManager}
                         filterUI={this.state.graphSetting.filterUI}
-                        onChange={this.props.onEditorChange.bind(this)}
-                        onCancel={this.props.onEditorCancel.bind(this)}>
+                        onChange={this.onEditorChange.bind(this)}
+                        onCancel={this.onEditorCancel.bind(this)}>
                     Graph Editor
                 </Editor>
                 <ControlWrapper dateRange={this.state.dateRange}
