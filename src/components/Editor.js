@@ -44,8 +44,8 @@ class Editor extends React.Component {
                 {this.props.children}
             </button>
             <Modal isOpen={this.state.modalEditor}
-                   className='modal'
-                   overlayClassName='dash-overlay'
+                   className='enebular-component-react-modal'
+                   overlayClassName='enebular-component-react-overlay'
                    onRequestClose={this.closeEditorModal.bind(this)} contentLabel='Modal'>
                 <div className='modal-content'>
                     <h3 style={{margin: '3px 0'}}>Editor Graph</h3>

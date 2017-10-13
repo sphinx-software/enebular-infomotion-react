@@ -6,47 +6,53 @@
     width: 60px; }
   .info-react-control-wrapper .control-timeline {
     flex: 1; }
-  .info-react-control-wrapper .modal {
-    background-color: #fff;
-    z-index: 1001;
-    outline: none;
-    width: 500px;
-    margin: 0 auto;
-    top: calc(50% - 300px);
-    height: 600px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    border-radius: 3px; }
-  .info-react-control-wrapper .modal-filter {
-    background-color: #fff;
-    z-index: 1001;
-    outline: none;
-    width: 500px;
-    margin: 0 auto;
-    top: calc(50% - 300px);
-    height: 700px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    border-radius: 3px; }
-  .info-react-control-wrapper .dash-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1000; }
-  .info-react-control-wrapper .modal-filter .enebular-filter-graph-wrapper {
+
+.enebular-component-react-modal {
+  background-color: #fff;
+  z-index: 1001;
+  outline: none;
+  width: 500px;
+  margin: 0 auto;
+  top: calc(50% - 300px);
+  height: 600px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 3px; }
+  .enebular-component-react-modal .modal-content {
+    padding: 20px;
+    height: 100%; }
+
+.enebular-component-react-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000; }
+
+.enebular-component-react-modal-filter {
+  background-color: #fff;
+  z-index: 1001;
+  outline: none;
+  width: 500px;
+  margin: 0 auto;
+  top: calc(50% - 300px);
+  height: 700px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 3px; }
+  .enebular-component-react-modal-filter .enebular-filter-graph-wrapper {
     height: calc(100% - 60px); }
-  .info-react-control-wrapper .modal-filter .enebular-filters {
+  .enebular-component-react-modal-filter .enebular-filters {
     height: 100%;
     position: relative; }
-  .info-react-control-wrapper .modal-filter .ui-filter-btn-group {
+  .enebular-component-react-modal-filter .ui-filter-btn-group {
     bottom: 0;
     right: 0;
     position: absolute; }
-  .info-react-control-wrapper .modal-content {
+  .enebular-component-react-modal-filter .modal-content {
     padding: 20px;
     height: 100%; }

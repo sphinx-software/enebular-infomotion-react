@@ -44,8 +44,8 @@ class Filter extends React.Component {
                 {this.props.children}
             </button>
             <Modal isOpen={this.state.modalFilter}
-                   className="modal-filter"
-                   overlayClassName='dash-overlay'
+                   className="enebular-component-react-modal-filter"
+                   overlayClassName="enebular-component-react-overlay"
                    onRequestClose={this.closeFilterModal.bind(this)} contentLabel='Modal'>
                 <div className='modal-content'>
                     <h3>Filter Graph</h3>
