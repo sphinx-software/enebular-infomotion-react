@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {infomotionUI, infomotion} from 'enebular-infomotion'
+import {infomotionUI, infomotion} from '@uhuru/enebular-infomotion-v2'
 
 class Livebutton extends React.Component {
     constructor (props) {

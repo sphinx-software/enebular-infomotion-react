@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {infomotionUI} from 'enebular-infomotion'
+import {infomotionUI} from '@uhuru/enebular-infomotion-v2'
 
 class DatePicker extends React.Component {
     constructor (props) {

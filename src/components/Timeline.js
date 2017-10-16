@@ -1,5 +1,5 @@
 import React from 'react';
-import {infomotionUI} from 'enebular-infomotion';
+import {infomotionUI} from '@uhuru/enebular-infomotion-v2';
 import PropTypes from 'prop-types'
 
 const styles = {
