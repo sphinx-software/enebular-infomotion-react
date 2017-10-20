@@ -63,14 +63,27 @@
     padding: 20px;
     height: 100%; }
 
+.filter-infomotion-tool .dash-filter-modal .enebular-filter-graph-wrapper {
+  height: calc(100% - 60px); }
+
+.filter-infomotion-tool .dash-filter-modal .enebular-filters {
+  height: 100%;
+  position: relative; }
+
+.filter-infomotion-tool .dash-filter-modal .ui-filter-btn-group {
+  bottom: 0;
+  right: 0;
+  position: absolute; }
+
 .filter-infomotion-tool .dash-filter-values {
   display: flex;
   flex-wrap: wrap; }
-  .filter-infomotion-tool .dash-filter-values .filter-value {
-    width: 50%;
-    padding: 5px;
-    align-items: center;
-    display: flex; }
+
+.filter-infomotion-tool .dash-filter-values .filter-value {
+  width: 50%;
+  padding: 5px;
+  align-items: center;
+  display: flex; }
 
 .filter-infomotion-tool .dash-filter-wrapper {
   overflow: auto;
@@ -81,18 +94,7 @@
   border-color: #3897f0 !important;
   color: #fff !important; }
 
-.filter-infomotion-tool .form-add-new-filter {
-  background-color: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  padding: 10px 15px;
-  margin-bottom: 10px; }
-
-.filter-infomotion-tool .list-filter {
-  overflow: auto;
-  max-height: 290px; }
-
-.filter-infomotion-tool .list-filter {
+.filter-infomotion-tool .label-filter {
   cursor: pointer;
   font-size: .7rem;
   display: inline-block;
@@ -109,13 +111,25 @@
   border-radius: 3px;
   -webkit-transition: background .1s ease;
   transition: background .1s ease; }
-  .filter-infomotion-tool .list-filter .list-filter-item {
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    display: flex; }
+
+.filter-infomotion-tool .form-add-new-filter {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-bottom: 10px; }
+
+.filter-infomotion-tool .list-filter {
+  overflow: auto;
+  max-height: 290px; }
+
+.filter-infomotion-tool .list-filter .list-filter-item {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  display: flex; }
 
 .filter-infomotion-tool .list-filter .list-filter-item .filter-content {
   flex: 1; }

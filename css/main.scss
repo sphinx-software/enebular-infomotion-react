@@ -91,15 +91,31 @@
 }
 
 .filter-infomotion-tool {
+  .dash-filter-modal .enebular-filter-graph-wrapper {
+    height: calc(100% - 60px);
+  }
+
+  .dash-filter-modal .enebular-filters {
+    height: 100%;
+    position: relative;
+  }
+
+  .dash-filter-modal .ui-filter-btn-group {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+
   .dash-filter-values {
     display: flex;
     flex-wrap: wrap;
-    .filter-value {
-      width: 50%;
-      padding: 5px;
-      align-items: center;
-      display: flex;
-    }
+  }
+
+  .dash-filter-values .filter-value {
+    width: 50%;
+    padding: 5px;
+    align-items: center;
+    display: flex;
   }
 
   .dash-filter-wrapper {
@@ -113,20 +129,7 @@
     color: #fff !important;
   }
 
-  .form-add-new-filter {
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-  }
-
-  .list-filter {
-    overflow: auto;
-    max-height: 290px;
-  }
-
-  .list-filter {
+  .label-filter {
     cursor: pointer;
     font-size: .7rem;
     display: inline-block;
@@ -143,23 +146,32 @@
     border-radius: 3px;
     -webkit-transition: background .1s ease;
     transition: background .1s ease;
+  }
 
-    .list-filter-item {
-      background-color: #fff;
-      border: 1px solid #e6e6e6;
-      border-radius: 3px;
-      padding: 10px 15px;
-      margin-bottom: 10px;
-      display: flex;
-    }
+  .form-add-new-filter {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
   }
 
   .list-filter {
-    .list-filter-item {
-      .filter-content {
-        flex: 1;
-      }
-    }
+    overflow: auto;
+    max-height: 290px;
+  }
+
+  .list-filter .list-filter-item {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+  .list-filter .list-filter-item .filter-content {
+    flex: 1;
   }
 
   .form-add-new-filter {
