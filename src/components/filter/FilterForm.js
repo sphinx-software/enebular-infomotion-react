@@ -65,17 +65,19 @@ class FilterForm extends React.Component {
 
     render() {
 
-        return <div onClick={this.openModal.bind(this)}>
-            <i className='pe-7s-filter f3'/>
-            <span className='f6 fw2'>Filters</span>
+        return <div style={{display: 'inline-block'}}>
+            <button className={`btn-filter ${this.props.className}`}
+                    onClick={this.openModal.bind(this)}>
+                {this.props.children}
+            </button>
 
             <Modal isOpen={this.state.isOpen}
-                   className='dash-modal-filter'
-                   overlayClassName='dash-overlay'
+                   className="enebular-component-react-modal-filter"
+                   overlayClassName="enebular-component-react-overlay"
                    onRequestClose={this.closeModal.bind(this)} contentLabel='Modal'>
                 <div className='dash-modal-content'>
                     <h3 className='f3 fw3 mb3'>Filters</h3>
-                    <div className='dash-filter-wrapper'>
+                    <div className='modal-content'>
                         <FilterList list={this.state.filters}
                                     onFilterEdit={this.onFilterEdit.bind(this)}
                                     onFilterRemove={this.onFilterRemove.bind(this)}
@@ -94,12 +96,16 @@ class FilterForm extends React.Component {
 }
 
 FilterForm.propTypes = {
+    className: PropTypes.string,
     filters: PropTypes.array.isRequired,
-    onChange: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired,
+    onCancel: PropTypes.func
 };
 
 FilterForm.defaultProps = {
-    filters: []
+    className: '',
+    filters: [],
+
 };
 
 export default FilterForm
