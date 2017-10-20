@@ -75,20 +75,18 @@ class FilterForm extends React.Component {
                    className="enebular-component-react-modal-filter"
                    overlayClassName="enebular-component-react-overlay"
                    onRequestClose={this.closeModal.bind(this)} contentLabel='Modal'>
-                <div className='dash-modal-content'>
+                <div className='modal-content'>
                     <h3 className='f3 fw3 mb3'>Filters</h3>
-                    <div className='modal-content'>
-                        <FilterList list={this.state.filters}
-                                    onFilterEdit={this.onFilterEdit.bind(this)}
-                                    onFilterRemove={this.onFilterRemove.bind(this)}
-                        />
-                        <FilterAdd isModeAdd={this.state.isModeAdd}
-                                   editFilter={this.state.editFilter}
-                                   onEdit={this.onSaveEditFilter.bind(this)}
-                                   onAddNew={this.onAddNewFilter.bind(this)}
-                                   onCancelEdit={this.onCancelEdit.bind(this)}
-                        />
-                    </div>
+                    <FilterList list={this.state.filters}
+                                onFilterEdit={this.onFilterEdit.bind(this)}
+                                onFilterRemove={this.onFilterRemove.bind(this)}
+                    />
+                    <FilterAdd isModeAdd={this.state.isModeAdd}
+                               editFilter={this.state.editFilter}
+                               onEdit={this.onSaveEditFilter.bind(this)}
+                               onAddNew={this.onAddNewFilter.bind(this)}
+                               onCancelEdit={this.onCancelEdit.bind(this)}
+                    />
                 </div>
             </Modal>
         </div>
