@@ -72,7 +72,7 @@ class FilterForm extends React.Component {
             </button>
 
             <Modal isOpen={this.state.isOpen}
-                   className="enebular-component-react-modal-filter"
+                   className="enebular-component-react-modal-filter filter-infomotion-tool"
                    overlayClassName="enebular-component-react-overlay"
                    onRequestClose={this.closeModal.bind(this)} contentLabel='Modal'>
                 <div className='modal-content'>
