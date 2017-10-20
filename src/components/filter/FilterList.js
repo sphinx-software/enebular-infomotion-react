@@ -20,14 +20,14 @@ class FilterList extends React.Component {
         return <div key={index} className='list-filter-item'>
           <div className='filter-content'>
             <div style={{fontWeight: 300}}>{item.key}</div>
-            <div className='pt3'>
+            <div style={{paddingTop: '10px'}}>
               {item.values.map((value) => {
                 return <span key={value.id} className='label-filter label-blue-filter' style={{marginTop: '5px'}}>{value.text}</span>
               })}
             </div>
           </div>
-          <i className='fa fa-pencil pointer' onClick={this.onFilterEdit.bind(this, index)} style={{marginRight: '10px'}}/>
-          <i className='fa fa-close red pointer' onClick={this.onFilterRemove.bind(this, index)}/>
+          <i className='fa fa-pencil' onClick={this.onFilterEdit.bind(this, index)} style={{marginRight: '10px', cursor: 'pointer'}}/>
+          <i className='fa fa-close red' onClick={this.onFilterRemove.bind(this, index)} style={{cursor: 'pointer'}}/>
         </div>
       })}
     </div>
