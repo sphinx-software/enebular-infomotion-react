@@ -103,7 +103,7 @@ class FilterAdd extends React.Component {
                style={{width: 'calc(100% - 15px)', margin: '5px 0px 0px 0'}}
                className='enebular-input'/>
       </div>
-      <div className='pt3'>
+      <div style={{paddingTop: '10px'}}>
         <label className='enebular-label-input'>Values</label>
         <ReactTags
           id={this.inputId}
@@ -126,11 +126,12 @@ class FilterAdd extends React.Component {
              position: 'absolute',
              marginTop: '-27px',
              cursor: 'pointer',
-             left: '216px'
+             left: '216px',
+             color: '#908e8e'
            }}
            onClick={this.onValueAdd.bind(this)}/>
       </div>
-      <div className='pt3'>
+      <div style={{paddingTop: '10px'}}>
         {this.props.isModeAdd ? (
           <button className='enebular-btn enebular-btn-teal' onClick={this.addNewFilter.bind(this)}>
             <i className='fa fa-plus'/> Add New Filter
