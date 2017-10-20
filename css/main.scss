@@ -1,92 +1,179 @@
 .info-react-control-wrapper {
-    display: flex;
-    padding: 0 10px;
-    align-items: center;
-    .control-live {
-        width: 60px;
-    }
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  .control-live {
+    width: 60px;
+  }
 
-    .control-timeline {
-        flex: 1;
-    }
+  .control-timeline {
+    flex: 1;
+  }
 
-    .btn-filter {
+  .btn-filter {
 
-    }
+  }
 
-    .btn-editor {
+  .btn-editor {
 
-    }
+  }
 }
 
 .enebular-component-react-modal {
-    background-color: #fff;
-    z-index:1001;
-    outline: none;
-    width: 500px;
-    margin: 0 auto;
-    top: calc(50% - 300px);
-    height: 600px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    border-radius: 3px;
+  background-color: #fff;
+  z-index: 1001;
+  outline: none;
+  width: 500px;
+  margin: 0 auto;
+  top: calc(50% - 300px);
+  height: 600px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 3px;
 
-    .modal-content {
-        padding: 20px;
-        height: 100%;
-    }
+  .modal-content {
+    padding: 20px;
+    height: 100%;
+  }
 }
 
 .enebular-component-react-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .7);
-    z-index:1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .7);
+  z-index: 1000;
 }
 
 .enebular-editor-form-control {
-    text-align: right;
+  text-align: right;
 }
 
 .enebular-component-react-modal-filter {
-    background-color: #fff;
-    z-index:1001;
-    outline: none;
-    width: 500px;
-    margin: 0 auto;
-    top: calc(50% - 300px);
-    height: 700px;
-    left: 0;
+  background-color: #fff;
+  z-index: 1001;
+  outline: none;
+  width: 500px;
+  margin: 0 auto;
+  top: calc(50% - 300px);
+  height: 700px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 3px;
+
+  .enebular-filter-graph-wrapper {
+    height: calc(100% - 30px);
+  }
+  .enebular-filter-list {
+    overflow: auto;
+    max-height: 485px;
+  }
+
+  .enebular-filters {
+    height: 100%;
+    position: relative;
+  }
+
+  .ui-filter-btn-group {
+    bottom: 0;
     right: 0;
     position: absolute;
-    border-radius: 3px;
+  }
 
-    .enebular-filter-graph-wrapper {
-        height: calc(100% - 30px);
-    }
-    .enebular-filter-list {
-        overflow: auto;
-        max-height: 485px;
-    }
-
-     .enebular-filters {
-        height: 100%;
-        position: relative;
-    }
-
-    .ui-filter-btn-group {
-        bottom: 0;
-        right: 0;
-        position: absolute;
-    }
-
-    .modal-content {
-        padding: 20px;
-        height: 100%;
-    }
+  .modal-content {
+    padding: 20px;
+    height: 100%;
+  }
 }
 
+.filter-infomotion-tool {
+  .dash-filter-values {
+    display: flex;
+    flex-wrap: wrap;
+    .filter-value {
+      width: 50%;
+      padding: 5px;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  .dash-filter-wrapper {
+    overflow: auto;
+    margin-top: 10px;
+  }
+
+  .label-blue-filter {
+    background-color: #3897f0 !important;
+    border-color: #3897f0 !important;
+    color: #fff !important;
+  }
+
+  .form-add-new-filter {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+  }
+
+  .list-filter {
+    overflow: auto;
+    max-height: 290px;
+  }
+
+  .list-filter {
+    cursor: pointer;
+    font-size: .7rem;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: baseline;
+    margin: 0 .14em;
+    background-color: #e8e8e8;
+    background-image: none;
+    padding: 6px;
+    color: rgba(0, 0, 0, .6);
+    text-transform: none;
+    font-weight: 400;
+    border: 0 solid transparent;
+    border-radius: 3px;
+    -webkit-transition: background .1s ease;
+    transition: background .1s ease;
+
+    .list-filter-item {
+      background-color: #fff;
+      border: 1px solid #e6e6e6;
+      border-radius: 3px;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      display: flex;
+    }
+  }
+
+  .list-filter {
+    .list-filter-item {
+      .filter-content {
+        flex: 1;
+      }
+    }
+  }
+
+  .form-add-new-filter {
+    margin-top: 10px;
+    .filter-tag {
+      margin-top: 5px;
+    }
+
+    .filter-remove {
+      margin-left: 5px;
+    }
+
+    .filter-input {
+      margin-top: 5px;
+    }
+  }
+}

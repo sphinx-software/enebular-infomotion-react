@@ -62,3 +62,69 @@
   .enebular-component-react-modal-filter .modal-content {
     padding: 20px;
     height: 100%; }
+
+.filter-infomotion-tool .dash-filter-values {
+  display: flex;
+  flex-wrap: wrap; }
+  .filter-infomotion-tool .dash-filter-values .filter-value {
+    width: 50%;
+    padding: 5px;
+    align-items: center;
+    display: flex; }
+
+.filter-infomotion-tool .dash-filter-wrapper {
+  overflow: auto;
+  margin-top: 10px; }
+
+.filter-infomotion-tool .label-blue-filter {
+  background-color: #3897f0 !important;
+  border-color: #3897f0 !important;
+  color: #fff !important; }
+
+.filter-infomotion-tool .form-add-new-filter {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-bottom: 10px; }
+
+.filter-infomotion-tool .list-filter {
+  overflow: auto;
+  max-height: 290px; }
+
+.filter-infomotion-tool .list-filter {
+  cursor: pointer;
+  font-size: .7rem;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: baseline;
+  margin: 0 .14em;
+  background-color: #e8e8e8;
+  background-image: none;
+  padding: 6px;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: none;
+  font-weight: 400;
+  border: 0 solid transparent;
+  border-radius: 3px;
+  -webkit-transition: background .1s ease;
+  transition: background .1s ease; }
+  .filter-infomotion-tool .list-filter .list-filter-item {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex; }
+
+.filter-infomotion-tool .list-filter .list-filter-item .filter-content {
+  flex: 1; }
+
+.filter-infomotion-tool .form-add-new-filter {
+  margin-top: 10px; }
+  .filter-infomotion-tool .form-add-new-filter .filter-tag {
+    margin-top: 5px; }
+  .filter-infomotion-tool .form-add-new-filter .filter-remove {
+    margin-left: 5px; }
+  .filter-infomotion-tool .form-add-new-filter .filter-input {
+    margin-top: 5px; }
