@@ -121,7 +121,7 @@ class FilterAdd extends React.Component {
           handleDelete={this.onValueDelete.bind(this)}
           handleAddition={this.onValueAdd.bind(this)}
           handleDrag={this.onValueDrag.bind(this)}/>
-        <i className='pe-7s-plus f4 v-mid'
+        <i className='fa fa-plus-circle'
            style={{
              position: 'absolute',
              marginTop: '-27px',
