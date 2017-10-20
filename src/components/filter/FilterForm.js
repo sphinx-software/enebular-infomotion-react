@@ -76,7 +76,7 @@ class FilterForm extends React.Component {
                    overlayClassName="enebular-component-react-overlay"
                    onRequestClose={this.closeModal.bind(this)} contentLabel='Modal'>
                 <div className='modal-content'>
-                    <h3 className='f3 fw3 mb3'>Filters</h3>
+                    <h3 style={{margin: ' 8px 0px'}}>Filters</h3>
                     <FilterList list={this.state.filters}
                                 onFilterEdit={this.onFilterEdit.bind(this)}
                                 onFilterRemove={this.onFilterRemove.bind(this)}
