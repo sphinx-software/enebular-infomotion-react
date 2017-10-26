@@ -23,8 +23,6 @@ class Timeline extends React.Component {
     componentDidMount () {
         let timeline = infomotionUI.timeline(
             this.timelineElement,
-            this.minDateElement,
-            this.maxDateElement,
             this.btnControl
         )
             .withRange(this.props.dateRange)
@@ -38,11 +36,7 @@ class Timeline extends React.Component {
             <button ref={(element) => { this.btnControl = element }} className='enebular-btn enebular-btn-control'>
                 <i className='fa fa-play' />
             </button>
-            <div style={styles.timeline}>
-                <div ref={(element) => { this.timelineElement = element }} />
-                <span ref={(element) => { this.minDateElement = element }} className='enebular-min-date' />
-                <span ref={(element) => { this.maxDateElement = element }} className='enebular-max-date' />
-            </div>
+            <div style={styles.timeline} ref={(element) => { this.timelineElement = element }}/>
         </div>
     }
 }
