@@ -27,7 +27,7 @@
     "node-sass": "^4.5.3"
   },
   "dependencies": {
-    "@uhuru/enebular-infomotion-v2": "git+ssh://git@bitbucket.org/technicalrockstars/infomotion-v2.git#develop",
+    "@uhuru/enebular-infomotion-v2": "^1.0.0-alpha.10",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-modal": "^3.0.3"
