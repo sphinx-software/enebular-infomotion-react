@@ -9,7 +9,6 @@ class DatePicker extends React.Component {
 
     componentDidMount () {
         let datePicker = infomotionUI.datePicker(this.datePicker)
-            .withRange(this.props.dateRange)
             .make();
 
         datePicker.onChange(dateRange => {

@@ -25,7 +25,6 @@ class Timeline extends React.Component {
             this.timelineElement,
             this.btnControl
         )
-            .withRange(this.props.dateRange)
             .make();
 
         this.props.onReady(timeline)
