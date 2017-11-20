@@ -27,7 +27,7 @@
     "node-sass": "^4.5.3"
   },
   "dependencies": {
-    "@uhuru/enebular-infomotion-v2": "^1.0.0-alpha.12",
+    "@uhuru/enebular-infomotion-v2": "^1.0.0-alpha.15",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-modal": "^3.0.3"
