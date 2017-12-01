@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {infomotionUI, infomotion} from '@uhuru/enebular-infomotion-v2'
+import {infomotionUI} from '@uhuru/enebular-infomotion-v2'
 
 class Livebutton extends React.Component {
     constructor (props) {
@@ -10,7 +10,6 @@ class Livebutton extends React.Component {
 
     componentDidMount () {
         let liveButton = infomotionUI.liveButton(this.liveBtn).make();
-        liveButton.setDateRange(new infomotion.DateRange(this.props.dateRange[0], this.props.dateRange[1]));
         this.props.onReady(liveButton)
     }
 
@@ -25,12 +24,10 @@ class Livebutton extends React.Component {
 
 Livebutton.propTypes = {
     onReady: PropTypes.func.isRequired,
-    dateRange: PropTypes.array.isRequired
 };
 
 Livebutton.defaultProps = {
     onReady: () => {},
-    dateRange: [new Date('2016-12-30'), new Date()]
 };
 
 export default Livebutton;
