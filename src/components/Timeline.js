@@ -42,12 +42,10 @@ class Timeline extends React.Component {
 
 Timeline.propTypes = {
     onReady: PropTypes.func.isRequired,
-    dateRange: PropTypes.array.isRequired
 };
 
 Timeline.defaultProps = {
     onReady: () => {},
-    dateRange: [new Date('2016-12-30'), new Date()]
 };
 
 export default Timeline
