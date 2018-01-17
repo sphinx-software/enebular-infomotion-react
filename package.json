@@ -1,6 +1,6 @@
 {
   "name": "enebular-infomotion-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "@uhuru/enebular-infomotion-v2": "^1.0.0-alpha.18",
-    "babel-polyfill": "^6.26.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-modal": "^3.0.3"

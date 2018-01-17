@@ -6,6 +6,5 @@ import ControlWrapper from './components/ControlWrapper';
 import Filter from './components/Filter';
 import Editor from './components/Editor';
 import FilterForm from './components/filter/FilterForm';
-import 'babel-polyfill';
 
 export {Timeline, Datepicker, LiveButton, Graph, ControlWrapper, Filter, Editor, FilterForm};
