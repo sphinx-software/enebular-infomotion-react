@@ -133,12 +133,12 @@ class FilterAdd extends React.Component {
       </div>
       <div style={{paddingTop: '10px'}}>
         {this.props.isModeAdd ? (
-          <button className='enebular-btn enebular-btn-teal' onClick={this.addNewFilter.bind(this)}>
+          <button className={this.props.primaryClass ? this.props.primaryClass : 'enebular-btn enebular-btn-teal'} onClick={this.addNewFilter.bind(this)}>
             <i className='fa fa-plus'/> Add New Filter
           </button>
         ) : (
           <div>
-            <button className='enebular-btn enebular-btn-teal' onClick={this.editNewFilter.bind(this)}>
+            <button className={this.props.primaryClass ? this.props.primaryClass : 'enebular-btn enebular-btn-teal'} onClick={this.editNewFilter.bind(this)}>
               <i className='fa fa fa-pencil pointer'/> Update Filter
             </button>
             <button className='enebular-btn' onClick={this.onCancel.bind(this)}>Cancel</button>
@@ -153,7 +153,8 @@ FilterAdd.propTypes = {
   onAddNew: PropTypes.func.isRequired,
   isModeAdd: PropTypes.bool,
   editFilter: PropTypes.object,
-  onCancelEdit: PropTypes.func
+  onCancelEdit: PropTypes.func,
+  primaryClass: PropTypes.string
 }
 
 FilterAdd.defaultProps = {

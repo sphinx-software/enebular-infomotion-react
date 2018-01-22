@@ -25,6 +25,7 @@ class Timeline extends React.Component {
             this.timelineElement,
             this.btnControl
         )
+          .setTheme(this.props.theme)
             .make();
 
         this.props.onReady(timeline)
@@ -32,7 +33,7 @@ class Timeline extends React.Component {
 
     render() {
         return <div style={styles.timelineWrapper}>
-            <button ref={(element) => { this.btnControl = element }} className='enebular-btn enebular-btn-control'>
+            <button ref={(element) => { this.btnControl = element }} className={this.props.classNamePlay}>
                 <i className='fa fa-play' />
             </button>
             <div style={styles.timeline} ref={(element) => { this.timelineElement = element }}/>
@@ -42,10 +43,14 @@ class Timeline extends React.Component {
 
 Timeline.propTypes = {
     onReady: PropTypes.func.isRequired,
+    theme: PropTypes.string,
+    classNamePlay: PropTypes.string
 };
 
 Timeline.defaultProps = {
     onReady: () => {},
+    theme: 'default',
+    classNamePlay: 'enebular-btn enebular-btn-control'
 };
 
 export default Timeline

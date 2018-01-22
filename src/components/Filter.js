@@ -16,6 +16,8 @@ class Filter extends React.Component {
             let filterUI = infomotionUI.filter(this.formFilterElement)
                 .setOptions(this.props.filterUI.options)
                 .setFilters(this.props.filterUI.filter)
+                .setPrimaryClass(this.props.classNamePrimary)
+                .setInfoClass(this.props.classNameInfo)
                 .make();
 
             filterUI.open();
@@ -66,6 +68,8 @@ Filter.propTypes = {
     pluginManager: PropTypes.any.isRequired,
     filterUI: PropTypes.object.isRequired,
     className: PropTypes.string,
+    classNamePrimary: PropTypes.string,
+    classNameInfo: PropTypes.string,
     onReady: PropTypes.func,
     onChange: PropTypes.func,
     onCancel: PropTypes.func

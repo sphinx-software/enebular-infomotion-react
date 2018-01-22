@@ -27,7 +27,7 @@ class ControlWrapper extends React.Component {
                 <LiveButton onReady={this.onLiveButton.bind(this)}/>
             </div>
             <div className='control-timeline'>
-                <Timeline onReady={this.onTimeline.bind(this)}/>
+                <Timeline classNamePlay={this.props.classNamePlay} theme={this.props.theme} onReady={this.onTimeline.bind(this)}/>
             </div>
         </div>
     }
@@ -35,6 +35,8 @@ class ControlWrapper extends React.Component {
 
 ControlWrapper.propTypes = {
     onReady: PropTypes.func.isRequired,
+    themeTimeline: PropTypes.string,
+    classNamePlay: PropTypes.string,
 };
 
 ControlWrapper.defaultProps = {
