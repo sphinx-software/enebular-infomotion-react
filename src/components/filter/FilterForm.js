@@ -81,7 +81,7 @@ class FilterForm extends React.Component {
                                 onFilterEdit={this.onFilterEdit.bind(this)}
                                 onFilterRemove={this.onFilterRemove.bind(this)}
                     />
-                    <FilterAdd isModeAdd={this.state.isModeAdd}
+                    <FilterAdd primaryClass={this.props.primaryClass} isModeAdd={this.state.isModeAdd}
                                editFilter={this.state.editFilter}
                                onEdit={this.onSaveEditFilter.bind(this)}
                                onAddNew={this.onAddNewFilter.bind(this)}
@@ -95,6 +95,7 @@ class FilterForm extends React.Component {
 
 FilterForm.propTypes = {
     className: PropTypes.string,
+    primaryClass: PropTypes.string,
     filters: PropTypes.array.isRequired,
     onChange: PropTypes.func.isRequired,
     onCancel: PropTypes.func
